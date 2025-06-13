@@ -1,0 +1,122 @@
+
+/*
+   What is CSS?
+    css is a cascading style sheet. we can use it to decorate our web site. or make attractive web site.
+   How Many types of css available?
+    Here 3 types of css available?
+      1] inline css. = if we want to apply css on single tag only then we can use inline css
+          syntex: <tagname style = "css1:value1; css2:value2; css3: value3 . . .">    
+      2] internal css = if we want to apply css in single file multiple tag then we can use internal css.
+         symtex: 
+           <head>
+             <style>
+                selecter{
+                  css1:value1;
+                  css2:value2;
+                  css3:value3;
+                  . 
+                  . 
+                  . 
+
+                }
+             <style>
+           </head>
+      3] external css = if you want to apply same css on multiple file tag then you can use external css.
+             syntex:- selecter{
+                  css1:value1;
+                  css2:value2;
+                  css3:value3;
+                  . 
+                  . 
+                  . 
+
+                }
+      
+    What is selecter?
+      selecter is a one type of identification for tag.
+    How many types of selecter?
+      here 5 types of selecter available.
+       0] universal selecter(*)
+       1] normal selecter
+            -name(tagname) = If you want to apply same css on same tag then you can use name selecter.
+            -class(.classname) = if you want to apply same css on different tag then you can use class selecter 
+            -id(#idname) = if you want to apply css in file single tag only then you can use id selecter
+       2] combinater selecter
+            -descendent selecter(selecter1 selecter2) = if you want to apply css on all selecter2 inside selecter1 then you can use descendent selecter.
+            -child selecter(selecter1>selecter2) = if you want to apply css on only child selecter then ypu can use it.
+            -genaral sibling(selecter1~selecter2) = it is use when we want to apply css on all sibling.
+            -adjusent sibling(slecter1+selecter2) = if you want to apply css on just first sibling. 
+       3] psuedo class selecter(selecter:psuedoclassname)
+       4] psuedo element selecter(selecter::psuedoelementname)
+       5] attribute selecter(["attributesname=value"]or ["attributesname"])    
+*/
+body{
+    background-color: lightcoral;
+}
+
+ul li{
+  color:cornflowerblue;
+}
+ul>li{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+Div~p{
+   background-color: darkcyan;
+   font-size: 30px;
+}
+div+p{
+  border: 2px solid yellow;
+  font-weight: 500;
+}
+#p-1:hover{
+  font-size: 18px;
+  font-style: italic;
+}
+a:link{
+  color: yellow;
+}
+a:hover{
+  color:antiquewhite
+}
+a:active{
+  color: brown;
+}
+a:visited {color:#00FF00 !important;} /* Visited link    */
+#p-1::first-letter{
+  font-size: 52px;
+  font-style: italic;
+  font-weight: 700;
+  background: lightsalmon;
+}
+#p-1::first-line{
+  background: lightslategray;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+[name]{
+  font-size: 36px;
+
+}
+[name='passage']{
+  color: #00FF00;
+}
+/*
+ how ro write media query 
+  syntex: media screen and (size of screen){
+    selecter{
+    css1:value1;
+    css2:value2;
+  }
+ */
+ @media screen and (max-width:768px) {
+
+     body{
+       background-color: lightseagreen;
+     }
+  
+ }
+@media screen and (min-width:768px) and (max-width:1200px) {
+  body{
+    background: lightgreen;
+  }
+}

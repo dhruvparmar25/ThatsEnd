@@ -1,0 +1,81 @@
+<!--
+   What is HTML?
+     HTML(Hyper text markup language) is a one type of tag base langue. we can use it to create frame work of web page.
+    coment :- it is used to share information for other developer it is not exicutable line.
+    How we can write tag?
+     syntx: <tagname></tagname>
+    How many types of tag in html?
+      Here in html 2 types of tag available.
+      1] single/unpair tag: = some tag doesn't need to close thats types of tag is call single/unpair tag. <br>,<hr>,<link>
+      2] couple/pair tag:  = some tag use with closing tag the thats types of tag is call couple/pair tag. <html>,<head>,<p> ..
+    Which tag are call main tag?
+       Html,head,title,body,p,div.
+
+    Attributes = atrributes is a one type of property for tag
+    How we can write attribute?
+      syntex: <tagname attribute1="value1" attribute2 = "value2" . . .>
+    How many types of attributes?
+       here 2 types of attributes are available.
+         1] global attributes = some attributes are used in all tag then it's call global attributes ex. id, class, name . . .
+         2] specific tag attributes = some attributes use only with specified tag then it call specific tag attributes. src,href, . . .
+
+    tag
+    title       =   title tag is used to create title for you web page.
+    body        =   it is use to display contain in browser body.
+    br          =   it is used to break line or take new line.
+    strong/b    =   it is use to highlight word or line in bold text.
+    i/em        =   it is use to create italic word.
+    U           =    it is used to underline word or line.
+    div/section = both tag are use to divide web page.
+    p           =   this tag is used to display paragraph on your web page.
+    img         =  if we want to display image on your web page then you can use img tag.
+    a           =  if we want to provide hyper link on your web page then we can use <a>.
+symbol and entities
+     syntex: &entityname;
+             &#code;
+-->
+<html>
+
+<head>
+  <title>Html Learning</title>
+  <link rel="stylesheet" href="learning.css">
+  <style>
+    * {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    p {
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .imp {
+      border: 2px solid greenyellow;
+    }
+
+    #italic {
+      background-color: cadetblue;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laudantium! Totam, a? Autem cupiditate assumenda impedit! Dolore atque ab, eius mollitia illo culpa iste beatae quod odit nam ipsa hic molestiae recusandae praesentium consequatur obcaecati tempore dolorem nesciunt reiciendis necessitatibus dolorum soluta voluptate? Expedita facere odit nisi voluptatibus placeat voluptas fuga qui repellendus aliquam ratione molestiae tempore autem ad, beatae sed at praesentium delectus et! Ut sed hic delectus accusamus? In dolor quis soluta praesentium? Repellendus numquam placeat modi sint, impedit culpa est perferendis ipsum minima veniam quibusdam non reprehenderit ab voluptas quod officiis et quasi vitae rem aperiam? Non.</p>
+  <button id="btn-hide">Hide</button>
+  <button id="btn-show">show</button>
+  <button id="btn-toggle">Toggle</button>
+  <h1 id="p-2">Double click</h1>
+  <p id="div-1">Good Morning</p>
+
+
+
+
+  &#163;
+  <script src="./jQuery.js"> </script>
+  <script src="./larningjQuery.js"></script>
+  <script src="./learning.js"></script>
+</body>
+
+</html>
