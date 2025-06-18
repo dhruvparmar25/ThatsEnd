@@ -1,5 +1,5 @@
 /*
-1] Selecter:selecter is on type of  identification
+    r:selecter is on type of  identification
 how many type of selecter
       0] universal selecter(*)
        1] normal selecter

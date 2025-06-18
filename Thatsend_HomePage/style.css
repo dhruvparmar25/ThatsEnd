@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+/* Navbar */
+.container-fluid {
+  padding: 0px 0px !important;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo a > img {
+  max-width: 159px;
+  height: 33px;
+}
+.itemText {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+  color: black;
+}
+.right {
+  display: flex;
+  gap: 2rem;
+}
+/* ooc */
+.title {
+  padding: 0 6%;
+  text-align: center;
+}
+.title-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 3 00;
+  font-size: 50px;
+  line-height: 65px;
+  color: rgb(88, 70, 140);
+}
+.ooc-box {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ooc-left,
+.ooc-right {
+  width: 49%;
+}
+
+.box {
+  width: 100%;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(98, 117, 255, 0.15);
+  transition: all 0.3s ease;
+  margin-top: -12px;
+}
+.box:hover {
+  transform: translateY(-16px);
+  box-shadow: 0 16px 50px rgba(98, 117, 255, 0.25); /* thoda aur strong shadow */
+}
+.box > .icon {
+  width: 20%;
+  padding: 1.5rem;
+}
+/* waw */
+section.waw {
+  width: 85%;
+  margin: auto;
+}
+.waw-titlt-text {
+  margin-top: 4rem;
+}
+.sub-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #474747;
+  font-size: 25px;
+}
+.sub-title > span {
+  color: black;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.waw > .text {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 47px;
+  color: #716c80;
+  text-align: justify;
+  margin: 2rem 0rem;
+}
+.read-btn {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.read-btn > button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #5580ff;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+
+  text-transform: uppercase;
+}
+
+.iwaww-img > img {
+  width: 100%;
+  margin-bottom: 1rem;
+ 
+}
+/* slider */
+.slider {
+  padding: 20px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.logo-slider {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: calc(100% / 5); 
+  overflow-x: auto;
+
+}
+
+
+
+.slide {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+.slied img,
+.slide img {
+  max-height: 80px;
+  object-fit: contain;
+}
+.slider{
+  margin-bottom: 2rem;
+}
