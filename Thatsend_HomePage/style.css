@@ -8,9 +8,8 @@ body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
 }
-.banner{
-  display: flex;
-
+.banner-2{
+  position: relative;
 }
 
 .banner-1,.banner-2,.banner-3 {
@@ -23,7 +22,7 @@ body {
 
 .banner-1 {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -55,27 +54,14 @@ body {
 }
 
 
-.banner-2 {
-  display: flex;
-  align-items: flex-end; 
-  justify-content: space-between;
-  height: 100vh; 
-  position: relative;
-    text-align: center;
-      background-image: url("https://www.thatsend.com/wp-content/uploads/2019/05/thatsend-https://www.thatsend.com/wp-content/uploads/revslider/thatsend-slider1/main-home-rev-slider-background-1.png-vector.png");
 
-}
 
 .b-2-img img {
     width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
-.b-2-text {
-  position: absolute;
-  top: 15% ;
-  left: 28%;
-}
+
 
 .banner-3{
   display: flex;
@@ -86,25 +72,30 @@ body {
 
 .b-2-title {
   font-size: 50px;
-  line-height: 38px;
+
   font-weight: 300;
   letter-spacing: normal;
   color: #6a56a6;
 }
 
-.b-2-des {
-  margin: 5rem 0rem;
+
+.b-2-img {
+  align-self: flex-end; /* Parent me flex ho to ye niche le aayega */
+  display: flex;
+  justify-content: center;
 }
 
-.b-2-des p {
+.b-2-des  {
   font-size: 28px;
-  line-height: 28px;
+margin-bottom: 0% !important;
   font-weight: 300;
-
+color: #716C80;
+margin: 2rem 0rem;
   & p {
     font-size: 28px;
     line-height: 28px;
     font-weight: 300;
+    margin: 0% !important;
   }
 }
 .b-3-img {
@@ -148,11 +139,17 @@ body {
   margin-left: 11rem;
 }
 
+
+.b-2-text{
+position:absolute;
+text-align:center ;
+}
+
 .b-1-btn button {
   background-color: rgb(85, 128, 255);
   padding: 8px 23px;
   text-align: left;
-  line-height: 17px;
+
   letter-spacing: 1px;
   font-weight: 500;
   border-color: rgba(0, 0, 0, 0);
@@ -162,10 +159,7 @@ body {
   box-shadow: none;
   color: white;
   text-transform: uppercase;
-}
-
-.b-1-btn {
-  margin-bottom: 2em;
+  font-size: 12px;
 }
 
 .big {
@@ -353,19 +347,23 @@ section.waw {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc(100% / 5);
-}
+  transition: transform 0.5s ease-in-out;
 
-.slide,
-bsi-slide {
+
+}
+.logo-com{
+width: 90%;
+margin: auto;
+overflow: hidden;
+}
+.slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slied img,
-.slide img {
-  max-height: 80px;
-  object-fit: contain;
+.slide.banner-3 {
+    position: relative;
 }
 
 .slider {
@@ -544,9 +542,6 @@ bsi-slide {
   align-items: center;
 }
 
-.bsi-slider {
-  width: 65%;
-}
 
 .bsi-text p {
   font-size: 26px !important;
@@ -558,19 +553,38 @@ bsi-slide {
   padding: 2rem;
 }
 
-.bsi-slide img {
-  width: 100%;
-}
 
-.slieds {
-  margin-top: 30px;
-  overflow: hidden;
-}
+    .bsi-slider {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px 0;
+    }
 
-.bsi-slide {
-  width: 222px;
-  height: 100px;
-}
+    .slieds {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+       gap: 2%;
+    }
+
+    .bsi-slide {
+      flex: 0 0 18%; /* 100 / 5 = 20% width */
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+     
+    }
+
+    .bsi-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+
+
 
 .testimonial {
   text-align: center;
@@ -594,6 +608,9 @@ bsi-slide {
   font-weight: 400;
 }
 
+.company-logo img{
+width: fit-content;
+}
 /* yt */
 .yt {
   display: flex;
@@ -838,4 +855,55 @@ bsi-slide {
   font-size: 12px;
   color: white;
   padding: 1rem;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300vw; /* 3 slides x 100vw */
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+   .slieds {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    color: #58468c;
+    font-size: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px 14px;
+}
+.nav-btn:hover{
+  color: orange;
+}
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
 }
