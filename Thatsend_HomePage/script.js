@@ -1,3 +1,18 @@
+// Mobile Menu Toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const rightMenu = document.querySelector('.right');
+
+mobileMenuBtn.addEventListener('click', () => {
+  rightMenu.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.mobile-menu') && !e.target.closest('.right')) {
+    rightMenu.classList.remove('active');
+  }
+});
+
 let currentSlide = 0;
 
 function moveSlide(direction) {
