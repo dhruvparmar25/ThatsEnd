@@ -1,7 +1,13 @@
-/* General Styles */
+/* ===================================================================
+
+   GENERAL STYLES
+   This section defines the basic styles for the entire website.
+
+=================================================================== */
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,15 +16,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Banner */
-.banner-2{
-  position: relative;
-}
+/* ===================================================================
 
-.banner-1,.banner-2,.banner-3 {
+   BANNER SECTION
+   This section styles the main banners at the top of the page.
+
+=================================================================== */
+
+.banner-1, .banner-2, .banner-3 {
   overflow: hidden;
   height: 100vh;
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -28,13 +35,29 @@ body {
   margin: auto;
 }
 
-.b-1-img,
-.b-1-text {
+.banner-2 {
+  position: relative;
+}
+
+.banner-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner 1: Image and Text */
+.b-1-img, .b-1-text {
   width: 50%;
 }
 
 .b-1-img img {
   width: 100%;
+}
+
+.b-1-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .b-1-titel h1 {
@@ -44,35 +67,53 @@ body {
 }
 
 .b-1-desc {
-  margin: 2rem 0rem;
+  margin: 2rem 0;
 }
 
 .b-1-desc p {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-size: 19px;
   line-height: 25px;
   font-weight: 300;
   color: #000000;
-  margin-bottom: 0% !important;
 }
 
-.b-2-img img {
-    width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.b-1-btn button {
+  background-color: #5580ff;
+  padding: 8px 23px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-.banner-3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Banner 2: Centered Text and Image */
+.b-2-text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .b-2-title {
   font-size: 50px;
   font-weight: 300;
-  letter-spacing: normal;
   color: #6a56a6;
+}
+
+.b-2-des {
+  font-size: 28px;
+  font-weight: 300;
+  color: #716c80;
+  margin: 2rem 0;
+}
+
+.b-2-des p {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 .b-2-img {
@@ -81,49 +122,51 @@ body {
   justify-content: center;
 }
 
-.b-2-des  {
-  font-size: 28px;
-  margin-bottom: 0% !important;
-  font-weight: 300;
-  color: #716C80;
-  margin: 2rem 0rem;
+.b-2-img img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.b-2-des p {
-  font-size: 28px;
-  line-height: 28px;
-  font-weight: 300;
-  margin: 0% !important;
-}
-
+/* Banner 3: Split Image Layout */
 .b-3-img {
   width: 70%;
   height: 100vh;
 }
 
-.b-3-img-1{
+.b-3-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.b-3-img-1 {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.b-3-img img{
-  width: 100%;
-  height: 100vh;
-}
-
 .text-b-3 {
-    position: absolute;
-    top: 100px;
-    left: 10px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
 }
 
-.text-b-3 h1,.text-b-3 h2{
+.text-b-3 h1, .text-b-3 h2 {
   font-size: 38px;
   line-height: 40px;
   font-weight: 300;
   color: #6a56a6;
+}
+
+/* Shared Banner Styles */
+.big {
+  font-size: 109px;
+  line-height: 100px;
+  font-weight: 800;
+  color: #d8d8ff;
+  font-family: "Open Sans", sans-serif;
 }
 
 .presence .big {
@@ -134,46 +177,12 @@ body {
   margin-left: 11rem;
 }
 
-.b-2-text{
-  position:absolute;
-  text-align:center ;
-}
+/* ===================================================================
 
-.b-1-btn button {
-  background-color: rgb(85, 128, 255);
-  padding: 8px 23px;
-  text-align: left;
-  letter-spacing: 1px;
-  font-weight: 500;
-  border-color: rgba(0, 0, 0, 0);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 36px;
-  box-shadow: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;
-}
+   NAVIGATION BAR
+   This section styles the header and navigation menu.
 
-.big {
-  font-size: 109px;
-  line-height: 100px;
-  font-weight: 800;
-  color: #D8D8FF;
-  font-family: "Open Sans", sans-serif;
-}
-
-.b-1-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Navbar */
-.container-fluid {
-  padding: 0px 0px !important;
-  overflow: hidden;
-}
+=================================================================== */
 
 .nav {
   background-color: transparent;
@@ -187,21 +196,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.5rem;
   width: 100%;
   margin: auto;
   padding: 19px 52px;
   position: relative;
 }
 
+.logo a > img {
+  max-width: 159px;
+  height: 33px;
+}
+
 .header .right {
   display: flex;
   gap: 2rem;
-}
-
-.logo a>img {
-  max-width: 159px;
-  height: 33px;
 }
 
 .itemText {
@@ -214,10 +222,16 @@ body {
 }
 
 .mobile-menu {
-  display: none;
+  display: none; /* Hidden by default, shown on smaller screens */
 }
 
-/* ooc */
+/* ===================================================================
+
+   OUT OF THE BOX CREATIVITY (OOC) SECTION
+   This section styles the feature boxes with hover effects.
+
+=================================================================== */
+
 .title {
   padding: 0 6%;
   text-align: center;
@@ -228,7 +242,7 @@ body {
   font-weight: 300;
   font-size: 55px;
   line-height: 65px;
-  color: rgb(88, 70, 140);
+  color: #58468c;
 }
 
 .ooc-box {
@@ -239,8 +253,7 @@ body {
   align-items: center;
 }
 
-.ooc-left,
-.ooc-right {
+.ooc-left, .ooc-right {
   width: 49%;
 }
 
@@ -261,12 +274,18 @@ body {
   box-shadow: 0 16px 50px rgba(98, 117, 255, 0.25);
 }
 
-.box>.icon {
+.box > .icon {
   width: 20%;
   padding: 1.5rem;
 }
 
-/* waw */
+/* ===================================================================
+
+   HOW WE WORK (WAW) SECTION
+   This section styles the descriptive text and read more button.
+
+=================================================================== */
+
 section.waw {
   width: 85%;
   margin: auto;
@@ -284,20 +303,20 @@ section.waw {
   font-size: 25px;
 }
 
-.sub-title>span {
+.sub-title > span {
   color: black;
   font-size: 28px;
   text-transform: uppercase;
 }
 
-.waw>.text {
+.waw > .text {
   font-size: 22px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 47px;
   color: #716c80;
   text-align: justify;
-  margin: 2rem 0rem;
+  margin: 2rem 0;
 }
 
 .read-btn {
@@ -305,15 +324,15 @@ section.waw {
   text-align: center;
 }
 
-.read-btn>button {
+.read-btn > button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   background-color: #5580ff;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 10px;
   border: none;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 
@@ -324,30 +343,34 @@ section.waw {
 
 .read-btn a:hover {
   text-decoration: underline;
-  color: white;
 }
 
-.iwaww-img>img {
+.iwaww-img > img {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-/* slider */
+/* ===================================================================
+
+   SLIDER SECTION
+   This section styles the logo and content sliders.
+
+=================================================================== */
+
 .slider {
   padding: 20px;
   overflow: hidden;
   margin-bottom: 2rem;
 }
 
-.logo-slider,
-.slieds {
+.logo-slider {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc(100% / 5);
   transition: transform 0.5s ease-in-out;
 }
 
-.logo-com{
+.logo-com {
   width: 90%;
   margin: auto;
   overflow: hidden;
@@ -360,10 +383,16 @@ section.waw {
 }
 
 .slide.banner-3 {
-    position: relative;
+  position: relative;
 }
 
-/* solution for your business */
+/* ===================================================================
+
+   SOLUTION FOR YOUR BUSINESS SECTION
+   This section styles the detailed solution descriptions.
+
+=================================================================== */
+
 .solution {
   width: 80%;
   margin: auto;
@@ -372,7 +401,7 @@ section.waw {
 
 .solution-text {
   text-align: center;
-  margin: 5rem 0rem;
+  margin: 5rem 0;
 }
 
 .solution-text h4 {
@@ -398,13 +427,12 @@ section.waw {
   margin-bottom: 3rem;
 }
 
-.solution-left,
-.solution-right {
+.solution-left, .solution-right {
   width: 45%;
 }
 
 .solution--conten h4 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   line-height: 40px;
   font-weight: 300;
@@ -434,7 +462,7 @@ section.waw {
 
 .sol-box {
   display: flex;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0;
   align-items: center;
   gap: 1rem;
 }
@@ -466,7 +494,6 @@ section.waw {
   font-size: 13px;
   line-height: 18px;
   font-weight: 300;
-  letter-spacing: normal;
   color: #58468c;
   text-decoration: none;
 }
@@ -475,7 +502,13 @@ section.waw {
   text-decoration: underline;
 }
 
-/* twc */
+/* ===================================================================
+
+   TWDC SECTION
+   This section styles the two-column text and image block.
+
+=================================================================== */
+
 .twdc {
   display: flex;
   margin-top: 2rem;
@@ -483,7 +516,7 @@ section.waw {
 
 .twdc-img {
   width: 42%;
-  background-color: #000000;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,7 +527,7 @@ section.waw {
 .twdc-text {
   width: 60%;
   background-color: #343a40;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,11 +547,17 @@ section.waw {
   font-size: 55px;
   line-height: 28px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem;
 }
 
-/* business-working */
+/* ===================================================================
+
+   BUSINESS WORKING SECTION
+   This section styles the business slider with logos.
+
+=================================================================== */
+
 .busi-wrk {
   display: flex;
   background-color: #eceff1;
@@ -534,11 +573,7 @@ section.waw {
 
 .bsi-text p {
   font-size: 26px !important;
-  margin-top: 0;
   color: #000;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   padding: 2rem;
 }
 
@@ -550,9 +585,11 @@ section.waw {
 }
 
 .slieds {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 5);
   transition: transform 0.5s ease-in-out;
-   gap: 2%;
+  gap: 2%;
 }
 
 .bsi-slide {
@@ -570,7 +607,13 @@ section.waw {
   object-fit: contain;
 }
 
-/* Testimonial */
+/* ===================================================================
+
+   TESTIMONIAL SECTION
+   This section styles the customer testimonials.
+
+=================================================================== */
+
 .testimonial {
   text-align: center;
   background: #343a40;
@@ -593,11 +636,17 @@ section.waw {
   font-weight: 400;
 }
 
-.company-logo img{
+.company-logo img {
   width: fit-content;
 }
 
-/* YouTube */
+/* ===================================================================
+
+   YOUTUBE SECTION
+   This section styles the embedded YouTube video and slider.
+
+=================================================================== */
+
 .yt {
   display: flex;
   background: black;
@@ -605,8 +654,7 @@ section.waw {
   margin: auto;
 }
 
-.thatsend-yt,
-.yt-slie {
+.thatsend-yt, .yt-slie {
   width: 50%;
 }
 
@@ -638,7 +686,7 @@ section.waw {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
 
 .intro p {
@@ -646,7 +694,7 @@ section.waw {
   line-height: 26px;
   font-weight: 300;
   text-align: center;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
 }
 
 .rating {
@@ -660,7 +708,13 @@ section.waw {
   color: goldenrod;
 }
 
-/* Footer */
+/* ===================================================================
+
+   FOOTER SECTION
+   This section styles the footer, including contact info and links.
+
+=================================================================== */
+
 .footer {
   background-color: #25282f;
 }
@@ -674,8 +728,7 @@ section.waw {
   padding: 1rem;
 }
 
-.ft-text h6,
-.ft-text h5 {
+.ft-text h6, .ft-text h5 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -731,7 +784,7 @@ section.waw {
 .or {
   width: 90%;
   margin: auto;
-  padding: 24px 0 24px 0 !important;
+  padding: 24px 0 !important;
 }
 
 .req {
@@ -744,30 +797,25 @@ section.waw {
 }
 
 .req-btn button {
-  background-color: rgb(20 126 134);
+  background-color: #147e86;
   padding: 19px 16px;
-  transition: none 0s ease 0s;
-  text-align: inherit;
   line-height: 18px;
-  border-width: 1px;
-  margin: 0px;
-  letter-spacing: 0px;
+  border: 1px solid #147e86;
+  margin: 0;
   font-weight: 500;
   font-size: 42px;
   color: #fff;
-  box-shadow: none;
   border-radius: 8px;
   cursor: pointer;
-  border-color: rgb(20 126 134);
 }
 
-.req-btn button>a {
+.req-btn button > a {
   text-decoration: none;
   color: #fff;
 }
 
 .req-btn button:hover {
-  background-color: rgb(45 168 177);
+  background-color: #2da8b1;
 }
 
 .links {
@@ -792,7 +840,7 @@ section.waw {
   font-weight: 300;
   line-height: 28px;
   position: relative;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 .ft-links li:not(:first-child)::before {
@@ -817,8 +865,7 @@ section.waw {
   padding: 1rem;
 }
 
-.firstline,
-.secoundline {
+.firstline, .secoundline {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -838,7 +885,13 @@ section.waw {
   padding: 1rem;
 }
 
-/* Slider */
+/* ===================================================================
+
+   MAIN SLIDER CONTAINER
+   This section styles the main page slider and navigation buttons.
+
+=================================================================== */
+
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -849,39 +902,40 @@ section.waw {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300vw; /* 3 slides x 100vw */
+  width: 300vw; /* 3 slides * 100vw */
 }
 
 .slide {
   width: 100vw;
   height: 100vh;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2rem;
   color: white;
 }
 
 .nav-btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    color: #58468c;
-    font-size: 32px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0px 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #58468c;
+  font-size: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 14px;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
   color: orange;
 }
 
-/* ------------------------- */
-/* --- Responsive Styles --- */
-/* ------------------------- */
+/* ===================================================================
+
+   RESPONSIVE STYLES
+   This section contains media queries for different screen sizes.
+
+=================================================================== */
 
 /* Medium devices (tablets, less than 1024px) */
 @media screen and (max-width: 1024px) {
@@ -899,15 +953,13 @@ section.waw {
   .ooc-box {
     width: 95%;
   }
-  .logo-slider,
-  .slieds {
+  .logo-slider, .slieds {
     grid-auto-columns: calc(100% / 4);
   }
   .yt {
     flex-direction: column;
   }
-  .thatsend-yt,
-  .yt-slie {
+  .thatsend-yt, .yt-slie {
     width: 100%;
   }
   .thatsend-yt iframe {
@@ -964,7 +1016,7 @@ section.waw {
     width: 100%;
     background: white;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     gap: 1rem;
   }
@@ -983,8 +1035,7 @@ section.waw {
   .ooc-left, .ooc-right {
     width: 100%;
   }
-  .logo-slider,
-  .slieds {
+  .logo-slider, .slieds {
     grid-auto-columns: calc(100% / 3);
   }
   .logo-com {
@@ -995,8 +1046,7 @@ section.waw {
     flex-direction: column;
     gap: 2rem;
   }
-  .solution-left,
-  .solution-right {
+  .solution-left, .solution-right {
     width: 100%;
   }
   .solution--conten p {
@@ -1005,8 +1055,7 @@ section.waw {
   .twdc {
     flex-direction: column;
   }
-  .twdc-img,
-  .twdc-text {
+  .twdc-img, .twdc-text {
     width: 100%;
   }
   .twdc-text h2 {
@@ -1045,8 +1094,7 @@ section.waw {
   .b-2-title {
     font-size: 28px;
   }
-  .b-2-des,
-  .b-2-des p {
+  .b-2-des, .b-2-des p {
     font-size: 16px;
     line-height: 20px;
   }
@@ -1062,8 +1110,7 @@ section.waw {
     height: auto;
     padding: 1rem;
   }
-  .logo-slider,
-  .slieds {
+  .logo-slider, .slieds {
     grid-auto-columns: calc(100% / 2);
   }
   .solution {
