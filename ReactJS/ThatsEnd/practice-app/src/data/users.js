@@ -8,25 +8,8 @@ export const users = [
   { id: 7, name: 'Grace', age: 31, online: false, src: 'https://randomuser.me/api/portraits/women/7.jpg' },
   { id: 8, name: 'Hannah', age: 26, online: true, src: 'https://randomuser.me/api/portraits/women/8.jpg' },
   { id: 9, name: 'Ivy', age: 27, online: false, src: 'https://randomuser.me/api/portraits/women/9.jpg' },
-  { id: 10, name: 'Jack', age: 32, online: true, src: 'https://randomuser.me/api/portraits/men/10.jpg' },
-  { id: 11, name: 'Kenny', age: 23, online: false, src: 'https://randomuser.me/api/portraits/men/11.jpg' },
-  { id: 12, name: 'Laura', age: 24, online: true, src: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { id: 13, name: 'Mona', age: 29, online: false, src: 'https://randomuser.me/api/portraits/women/13.jpg' },
-  { id: 14, name: 'Nina', age: 26, online: true, src: 'https://randomuser.me/api/portraits/women/14.jpg' },
-  { id: 15, name: 'Oliver', age: 28, online: false, src: 'https://randomuser.me/api/portraits/men/15.jpg' },
-  { id: 16, name: 'Paul', age: 33, online: true, src: 'https://randomuser.me/api/portraits/men/16.jpg' },
-  { id: 17, name: 'Quinn', age: 30, online: false, src: 'https://randomuser.me/api/portraits/women/17.jpg' },
-  { id: 18, name: 'Rachel', age: 27, online: true, src: 'https://randomuser.me/api/portraits/women/18.jpg' },
-  { id: 19, name: 'Sam', age: 24, online: false, src: 'https://randomuser.me/api/portraits/men/19.jpg' },
-  { id: 20, name: 'Tina', age: 26, online: true, src: 'https://randomuser.me/api/portraits/women/20.jpg' },
-  { id: 21, name: 'Uma', age: 29, online: false, src: 'https://randomuser.me/api/portraits/women/21.jpg' },
-  { id: 22, name: 'Vera', age: 32, online: true, src: 'https://randomuser.me/api/portraits/women/22.jpg' },
-  { id: 23, name: 'Will', age: 25, online: false, src: 'https://randomuser.me/api/portraits/men/23.jpg' },
-  { id: 24, name: 'Xander', age: 27, online: true, src: 'https://randomuser.me/api/portraits/men/24.jpg' },
-  { id: 25, name: 'Yara', age: 22, online: false, src: 'https://randomuser.me/api/portraits/women/25.jpg' },
-  { id: 26, name: 'Zane', age: 28, online: true, src: 'https://randomuser.me/api/portraits/men/26.jpg' },
-  { id: 27, name: 'Anna', age: 30, online: false, src: 'https://randomuser.me/api/portraits/women/27.jpg' },
-  { id: 28, name: 'Ben', age: 24, online: true, src: 'https://randomuser.me/api/portraits/men/28.jpg' },
-  { id: 29, name: 'Cora', age: 25, online: false, src: 'https://randomuser.me/api/portraits/women/29.jpg' },
-  { id: 30, name: 'Derek', age: 29, online: true, src: 'https://randomuser.me/api/portraits/men/30.jpg' }
+  { id: 10, name: 'Jack', age: 32, online: true, src: 'https://randomuser.me/api/portraits/men/10.jpg' }
 ];
+// Active/Inactive arrays
+export const activeUsers   = users.filter(u => u.online);
+export const inactiveUsers = users.filter(u => !u.online);

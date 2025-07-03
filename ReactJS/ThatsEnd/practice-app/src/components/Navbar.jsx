@@ -4,7 +4,7 @@ export default function Navbar() {
     const links = [
         { name: 'Home', path: '/' },
         { name: 'Ass-1', path: '/ass1' },
-        { name: 'Ass-2', path: '/ass2' },
+        { name: 'Active', path: '/active' },
     ];
     return (
         <nav className="text-white flex justify-center gap-4 bg-blue-600 py-3 shadow-md" >
