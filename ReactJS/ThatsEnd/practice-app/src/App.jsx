@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import Ass1 from'./pages/Ass1'
 import Active from './pages/Active';
 import Footer from'./components/Fotter'
+import './styles/App.css'
 import { Route, Routes } from "react-router-dom";
  
 
@@ -12,7 +13,7 @@ import { Route, Routes } from "react-router-dom";
 export default function App(){
   return(
     
-    <div className=" min-h-screen bg-gray-100">
+    <div className=" flex flex-col min-h-screen bg-gray-100">
       <Header />
       <Navbar />
     <Routes>
