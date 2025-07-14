@@ -14,16 +14,16 @@ function TernaryOperator() {
   ];
   return (
     <>
-      <h2>Ternary Operator</h2>
+      <h2 className="font-bold">Ternary Operator</h2>
       <li>{isLoggedin ? "Welocme Home Page" : "Please Login"}</li>
-      <l>
+      <ul>
         {products.map((product, i) => (
           <li key={i}>
 
             {product.name}-{product.stok ? "In stoke" : " out of stoke"}{" "}
           </li>
         ))}
-      </l>
+      </ul>
     </>
   );
 }
