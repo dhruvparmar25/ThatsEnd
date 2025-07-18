@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Test() {
   // Q-1 Take a three array and merge all using spread operator.
   const var1 = [1, 2, 3];
@@ -25,11 +26,18 @@ function Test() {
   // display one button name UpdateText
   // when click on button display alert with string which is using same initail declared variable and display text "Lorem Ipsum has been the industry in 100 city"
   // here in string whole 100 number which is you have to display dynamically using jsx
-  var str =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
-  const changeText = () => {
-    alert(`Lorem Ipsum has been the industry in ${obj1.rollNum} city`);
+let myString = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+
+ const cityCount = 100;
+
+  const handleUpdateClick = () => {
+    // Update the plain JavaScript variable
+    myString = `Lorem Ipsum has been the industry in ${cityCount} city`;
+
+    // The alert will show the updated value of myString
+    alert(myString);
   };
+
   //Q-5 Using createElement method display one message in h1 tag also apply color on that tag.
   var CeMsg = React.createElement(
     "h1",
@@ -69,13 +77,12 @@ function Test() {
   const greetFun = greet1("Dhruv");
   //Q-9a) What will the component display if isOnline is true?
   // b) How would you rewrite this using an if-else statement instead of a ternary operator?
-
+  let message;
   function Status({ isOnline }) {
     return <p>{isOnline ? "User is online" : "User is offline"}</p>;
   }
   function Status1(isOnline1) {
-    let message;
-    if (isOnline1) {
+    if (isOnline1 === true) {
       message = "User is online";
     } else {
       message = "User is Offline";
@@ -107,8 +114,8 @@ function Test() {
         you have to display dynamically using jsx
       </h2>
       <h4>
-        {str} <br />
-        <button onClick={changeText}>UpdateText</button>
+        <p>{myString}</p>
+        <button onClick={handleUpdateClick}>Update Text</button>
       </h4>
       <h2>
         Q-5 Using createElement method display one message in h1 tag also apply
@@ -152,7 +159,7 @@ function Test() {
         State Check
         <Status isOnline={true} />
         <Status isOnline={false} />
-       IF Else State Check
+        IF Else State Check
         <Status1 isOnline1={true} />
         <Status1 isOnline1={false} />
       </h4>

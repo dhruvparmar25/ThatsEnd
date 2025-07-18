@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css'
-import ControlledInput from './ControlledInput'
-import UncontrolledInput from './UncontrolledInput'
+import InputBoxData from './InputBoxData'
+
 
 function App() {
   return (
 <>
-<ControlledInput/>
-<hr />
-<UncontrolledInput/>
+
+<InputBoxData/>
 </>
   )
 }

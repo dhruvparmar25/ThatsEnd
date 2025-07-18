@@ -11,6 +11,7 @@ import SpreadOp from "./pages/SpreadOp";
 import TernaryOperator from "./pages/TernaryOperator";
 import PropsDefaultValue from "./pages/Props/PropsDefaultValue";
 import PassJsxToProps from "./pages/Props/PassJsxToProps";
+import ParentProps from "./pages/Props/ParentProps";
 function App() {
   const [stdName, setstdName] = useState("Dhruv Parmar");
   const university = ["vsngu", "su", "gtu"];
@@ -43,13 +44,15 @@ function App() {
           </button>
           <PropsDefaultValue userName="Demo" />
           <PropsDefaultValue />
-  
-  <PassJsxToProps>
-    <h1 className="text-red-600">Student Card</h1>
-    <li>Student Name : PARMAR</li>
-    <li>Father Name: XXXXXXX</li>
-    <li>Class :  XI</li>
-  </PassJsxToProps>
+
+          <PassJsxToProps>
+            <h1 className="text-red-600">Student Card</h1>
+            <li>Student Name : PARMAR</li>
+            <li>Father Name: XXXXXXX</li>
+            <li>Class : XI</li>
+          </PassJsxToProps>
+          <ParentProps/>
+          
         </div>
       </div>
     </>
