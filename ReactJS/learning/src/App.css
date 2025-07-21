@@ -5,3 +5,17 @@
     color: black;
     text-align: center;
 }
+button{
+    border: 1px solid ;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: white;
+    font-size: 16px;
+
+}
+button:hover{
+    background-color: rgba(0, 140, 255, 0.836);
+    color: black;
+    border: none;
+}
