@@ -19,3 +19,13 @@ button:hover{
     color: black;
     border: none;
 }
+input{
+    border: 1px solid black;
+    padding: 1px;
+    margin-left: 10px;
+}
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 40px;
+}
