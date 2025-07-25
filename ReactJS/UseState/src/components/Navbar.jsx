@@ -1,19 +1,15 @@
-import React from 'react'
-import '../index.css'
+import React from "react";
+import "../index.css";
 
 function Navbar() {
   return (
-  <>
-  <nav className='flex item-center justify-between bg-blue-800 w-full'>
-    <div className="usercard">
-        <label>UserCard</label>
-    </div>
-    <div className="UserList">
-        <label >UserLists</label>
-    </div>
-  </nav>
-  </>
-  )
+    <>
+      <div className="navbar bg-gray-500 p-5 text-center text-white">
+      <h1>User Dashboard</h1>
+
+      </div>
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;
