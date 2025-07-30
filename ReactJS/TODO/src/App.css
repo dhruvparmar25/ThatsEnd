@@ -1,0 +1,17 @@
+body{
+    background-color: hsla(200, 80%, 50%, 0.9);
+}
+
+.addTask,.pendingTask,.completeTask{
+width: 30%;
+height: 550px;
+background-color: wheat;
+margin-top: 1rem;
+border-radius: 30px;
+color: black;
+}
+.title{
+    background-color: azure;
+    border-radius: 20px;
+    text-align:center ;
+}

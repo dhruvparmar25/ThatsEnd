@@ -1,8 +1,10 @@
 import React from "react";
 import "../src/App.css";
-import UseState from "./components/UseState"
+import UseState from "./components/UseState";
 import Updateobj from "./components/Updateobj";
 import Form from "./components/Form";
+import ResEvent from "./components/Responding/ResEvent";
+import UpdatingArray from "./components/UpdatingArray";
 // import Propes from "./components/Propes";
 // import Profile from "./components/Profile";
 // import PropButton from "./components/PropButton";
@@ -21,8 +23,9 @@ function App() {
       <GalleryState />
       <UseState/>
       <Updateobj/>
-      <ConditionaRendaring/> */}
-      <Form />
+      <ConditionaRendaring/> 
+       <Form />      <ResEvent />*/}
+      <UpdatingArray />
     </>
   );
 }

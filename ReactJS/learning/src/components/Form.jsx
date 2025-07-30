@@ -33,7 +33,7 @@ function Form() {
     } else if (type === "file") {
       setForm((prev) => ({
         ...prev,
-        resume: files[0], // store file object
+        resume: files[0], 
       }));
     } else {
       setForm((prev) => ({
