@@ -22,8 +22,8 @@ function TODO() {
     setinputVal("");
   };
 
-  const handelRemove =(itemId)=>{
-    const fltrData = todo.filter((a)=>a.id !== itemId)
+  const handelRemove = (itemId) => {
+    const fltrData = todo.filter((a) => a.id !== itemId)
     setTodo(fltrData)
   }
 
@@ -97,20 +97,23 @@ function TODO() {
             >
               <div className="title">
                 <h1>Pendiing Task</h1>
-                <ul>
-                  {todo.map((item) => {
-                    return (
-                      <li key={item.id}>
-                        <p>{new Date(item.date).toLocaleString()}</p>
-                        <h2>{item.task}</h2>
-                      <button onClick={()=>handelRemove(item.id)}>remove</button>
 
-                      </li>
-                    );
-                      
-                  })}
-                </ul>
               </div>
+
+              {todo.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <p>{new Date(item.date).toLocaleString()}</p>
+                    <div className="list-task">
+                      <input type="checkbox" />
+                      <h4 className="desc">{item.task}</h4>
+                      <button onClick={() => handelRemove(item.id)}><img width={"10px"} src="../public/tras.png" /></button>
+                    </div>
+                  </li>
+                );
+
+              })}
+
             </div>
           </div>
           <div className="completeTask"></div>
