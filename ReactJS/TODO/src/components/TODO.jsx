@@ -6,6 +6,15 @@ function TODO() {
   const [todo, setTodo] = useState([]);
   const [inputVal, setinputVal] = useState("");
 
+  const toggleTask = (id) => {
+    const updated = todo.map((item) =>
+      item.id === id ? { ...item, isDone: !item.isDone } : item);
+    setTodo(updated)
+  }
+
+
+
+
   const handelChange = (e) => {
     setinputVal(e.target.value);
   };
@@ -15,7 +24,8 @@ function TODO() {
       {
         id: nextId++,
         date: new Date(),
-        task: inputVal
+        task: inputVal,
+        isDone: false
       }
     ]);
     alert("Task Added.....")
@@ -30,93 +40,68 @@ function TODO() {
   return (
     <div>
       <label>
-        <h1
-          style={{
-            textAlign: "center",
-            background: "black",
-            color: "white",
-            width: "80%",
-            margin: "auto",
-          }}
-        >
-          TODO
-        </h1>
-        <div
-          style={{
-            display: "flex",
-            width: "70%",
-            margin: "auto",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className="addTask "
-          >
-            <div style={{ textAlign: "center" }}>
+        <h1 className="todo-heading">TODO</h1>
+        <div className="main-container">
+          <div className="addTask">
+            <div className="center-text">
               <h2 className="title">ADD Task</h2>
               <textarea
                 placeholder="Enter your Task here..."
-                rows={4}
+                rows={15}
+                cols={40}
                 value={inputVal}
                 onChange={handelChange}
-                style={{
-                  padding: "10px",
-                  border: "none",
-                  borderRadius: "10px",
-                }}
-                type="text"
+                className="textarea"
               />
-              <button
-                onClick={handelAdd}
-                style={{
-                  marginLeft: "10px",
-                  padding: "10px",
-                  borderRadius: "10px",
-                  background: "black",
-                  border: "none",
-                  color: "white",
-                }}
-              >
+              <button className="add-btn" onClick={handelAdd}>
                 ADD+
               </button>
             </div>
           </div>
-          <div className="pendingTask">
-            <div
-              style={{
-                width: "90%",
-                margin: "auto"
-              }}
-            >
-              <div className="title">
-                <h1>Pendiing Task</h1>
 
+          <div className="pendingTask">
+            <div className="task-container">
+              <div className="title">
+                <h1>Pending Task</h1>
               </div>
 
-              {todo.map((item) => {
-                return (
-                  <li key={item.id}>
-                    <p>{new Date(item.date).toLocaleString()}</p>
-                    <div className="list-task">
-                      <input type="checkbox" />
-                      <h4 className="desc">{item.task}</h4>
-                      <button onClick={() => handelRemove(item.id)}><img width={"10px"} src="../public/tras.png" /></button>
-                    </div>
-                  </li>
-                );
-
-              })}
-
+              {todo.filter(item => !item.isDone).map((item) => (
+                <li key={item.id}>
+                  <p>{new Date(item.date).toLocaleString()}</p>
+                  <div className="list-task">
+                    <input type="checkbox" checked={item.isDone} onChange={()=>toggleTask(item.id)} />
+                    <h4 className="desc">{item.task}</h4>
+                    <button onClick={() => handelRemove(item.id)}>
+                      <img width={"10px"} src="../public/tras.png" alt="delete" />
+                    </button>
+                  </div>
+                </li>
+              ))}
             </div>
           </div>
-          <div className="completeTask"></div>
+          <div className="completeTask">
+            <div className="task-container">
+              <div className="title">
+                <h1>Complete Task</h1>
+              </div>
+              <ul >
+                {todo.filter(item => item.isDone).map((item) => (
+                  <li key={item.id}>
+                     <p>{new Date(item.date).toLocaleString()}</p>
+                 <div className="list-task">
+                     <input type="checkbox" checked={item.isDone} onChange={()=>toggleTask(item.id)} />
+                    <h4 style={{textDecoration:"line-through"}} className="desc">{item.task}</h4>
+                    <button onClick={() => handelRemove(item.id)}>
+                      <img width={"10px"} src="../public/tras.png" alt="delete" />
+                    </button>
+                 </div>
+                    </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+
         </div>
       </label>
     </div>

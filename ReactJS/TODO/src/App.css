@@ -2,6 +2,22 @@ body {
   background-color: hsla(200, 80%, 50%, 0.9);
 }
 
+.todo-heading {
+  text-align: center;
+  background: black;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.main-container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .addTask,
 .pendingTask,
 .completeTask {
@@ -12,52 +28,84 @@ body {
   border-radius: 30px;
   color: black;
 }
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .title {
   background-color: azure;
   border-radius: 20px;
   text-align: center;
 }
-li {
-  list-style: none;
-  /* border: 1px solid black; */
-  margin: auto;
-  height: fit-content;
-  margin: 0px;
-  padding: 0px;
-  background-color: lightgray;
-  margin-bottom: 10px;
 
+.textarea {
+  padding: 10px;
+  border: none;
   border-radius: 10px;
 }
+
+.add-btn {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.task-container {
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  background-color: lightgray;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
 li p {
-  background-color: white ;
+  background-color: white;
   color: black;
   width: fit-content;
   padding: 5px;
   font-size: 12px;
-  margin: 0%;
+  margin: 0;
   border-radius: 10px;
 }
+
 .list-task {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
+
 .list-task > button {
   width: fit-content;
   height: fit-content;
   padding: 4px;
 }
+
 .desc {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
+  margin: 0;
   padding: 10px;
   white-space: normal;
   word-break: break-word;
   flex: 1;
 }
+
 .pendingTask {
   overflow: auto;
 }
