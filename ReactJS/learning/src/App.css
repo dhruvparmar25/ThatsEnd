@@ -3,7 +3,9 @@
 
 @tailwind utilities;
 
-
+body{
+    text-align: center;
+}
 button{
     border: 1px solid transparent;
     padding: 3px;

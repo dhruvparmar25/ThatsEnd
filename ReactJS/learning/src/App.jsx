@@ -5,6 +5,9 @@ import Updateobj from "./components/Updateobj";
 import Form from "./components/Form";
 import ResEvent from "./components/Responding/ResEvent";
 import UpdatingArray from "./components/UpdatingArray";
+import Managing from "./components/useState/Managing";
+import State from "./pages/State";
+import UseEffect from "./pages/UseEffect";
 // import Propes from "./components/Propes";
 // import Profile from "./components/Profile";
 // import PropButton from "./components/PropButton";
@@ -24,8 +27,13 @@ function App() {
       <UseState/>
       <Updateobj/>
       <ConditionaRendaring/> 
-       <Form />      <ResEvent />*/}
-      <UpdatingArray />
+       <Form />      <ResEvent />
+             <UpdatingArray /> 
+               <Managing/>
+<State/>
+
+             */}
+             <UseEffect/>
     </>
   );
 }

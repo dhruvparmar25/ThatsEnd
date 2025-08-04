@@ -12,9 +12,6 @@ function TODO() {
     setTodo(updated)
   }
 
-
-
-
   const handelChange = (e) => {
     setinputVal(e.target.value);
   };
@@ -69,7 +66,7 @@ function TODO() {
                 <li key={item.id}>
                   <p>{new Date(item.date).toLocaleString()}</p>
                   <div className="list-task">
-                    <input type="checkbox" checked={item.isDone} onChange={()=>toggleTask(item.id)} />
+                    <input type="checkbox" checked={item.isDone} onChange={() => toggleTask(item.id)} />
                     <h4 className="desc">{item.task}</h4>
                     <button onClick={() => handelRemove(item.id)}>
                       <img width={"10px"} src="../public/tras.png" alt="delete" />
@@ -87,15 +84,15 @@ function TODO() {
               <ul >
                 {todo.filter(item => item.isDone).map((item) => (
                   <li key={item.id}>
-                     <p>{new Date(item.date).toLocaleString()}</p>
-                 <div className="list-task">
-                     <input type="checkbox" checked={item.isDone} onChange={()=>toggleTask(item.id)} />
-                    <h4 style={{textDecoration:"line-through"}} className="desc">{item.task}</h4>
-                    <button onClick={() => handelRemove(item.id)}>
-                      <img width={"10px"} src="../public/tras.png" alt="delete" />
-                    </button>
-                 </div>
-                    </li>
+                    <p>{new Date(item.date).toLocaleString()}</p>
+                    <div className="list-task">
+                      <input type="checkbox" checked={item.isDone} onChange={() => toggleTask(item.id)} />
+                      <h4 style={{ textDecoration: "line-through" }} className="desc">{item.task}</h4>
+                      <button onClick={() => handelRemove(item.id)}>
+                        <img width={"10px"} src="../public/tras.png" alt="delete" />
+                      </button>
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>
