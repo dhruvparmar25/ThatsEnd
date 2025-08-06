@@ -8,6 +8,9 @@ import UpdatingArray from "./components/UpdatingArray";
 import Managing from "./components/useState/Managing";
 import State from "./pages/State";
 import UseEffect from "./pages/UseEffect";
+import ScrollImg from "./pages/useRef/ScrollImg";
+import VideoPlayer from "./pages/useRef/VideoPlayer";
+
 // import Propes from "./components/Propes";
 // import Profile from "./components/Profile";
 // import PropButton from "./components/PropButton";
@@ -27,13 +30,19 @@ function App() {
       <UseState/>
       <Updateobj/>
       <ConditionaRendaring/> 
-       <Form />      <ResEvent />
-             <UpdatingArray /> 
-               <Managing/>
-<State/>
+      <Form />
+      <ResEvent />
+      <UpdatingArray /> 
+      <Managing/>
+      <State/>
+      <UseEffect/>
+      <Useref/>
+      <Stopwatch/>
+      <ScrollImg/>
 
-             */}
-             <UseEffect/>
+*/}
+
+  <VideoPlayer/>
     </>
   );
 }
