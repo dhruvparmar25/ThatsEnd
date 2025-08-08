@@ -1,28 +1,77 @@
-*{
+* {
   margin: 0;
   padding: 0px;
   background-origin: border-box;
+  /* text-align: center; */
+  background-color: grey;
 }
-h2{
+.test3{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+}
+h2 {
   color: red;
 
   font-size: 16px;
 }
-h4{
+h4 {
   color: green;
   padding-top: 10px;
   padding: 10px;
-
 }
-button{
+button {
   padding: 5px;
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+  width: 50px;
+  background-color: lightblue;
+  border: none;
   border-radius: 10px;
-  margin: 5px 0px;
+  margin-top:1rem;
 }
-button:hover{
-  background-color: black;
+button:hover {
+  background-color: lightcoral;
   color: white;
+}
+input {
+  background-color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+/* displayRimer */
+.displayRimer,.BMS,.formValidatin,.stopwatch{
+  width: 400px;
+  margin: auto;
+  background-color: black;
+  height: max-content;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+.display,.bmsField ,.bmsField label,.output,.output p,.formValidatin form ,form div,form div label, form div p,.btn-group,.btn-group div{
+  background-color: black;
+  margin-top: 12px;
+}
+.output p{
+  text-align: start;  
+}
+.title{
+  border-radius: 20px;
+  text-align: center;
+}
+.display{
+  font-size: 64px;
+  color: brown;
+  text-decoration: dotted;  
+}
+form div p{
+  color: red;
+}
+.btn-group{
+  display: flex;
+  justify-content: space-around;
 }
