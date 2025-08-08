@@ -21,7 +21,10 @@ function DisplayTimer() {
         }, 10);
         return () => clearInterval(intervalRef.current)
     }, [])
-
+const handelReset = ()=>{
+clearInterval(intervalRef.current)
+setTime(0)
+}
 
     return (
         <div>
@@ -29,7 +32,10 @@ function DisplayTimer() {
                 <h1 className='title'>Display  Timer</h1>
                 <div className='display'>{hours}:{minutes}:{seconds}:{milliseconds}
                 </div>
-                <button onClick={() => clearInterval(intervalRef.current)} >Stop</button>
+             <div className="btn-group">
+                   <button onClick={() => clearInterval(intervalRef.current)} >Stop</button>
+                <button onClick={handelReset}>Reset</button>
+             </div>
             </div>
         </div>
     )
