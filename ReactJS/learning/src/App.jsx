@@ -10,6 +10,7 @@ import State from "./pages/State";
 import UseEffect from "./pages/UseEffect";
 import ScrollImg from "./pages/useRef/ScrollImg";
 import VideoPlayer from "./pages/useRef/VideoPlayer";
+import UseMemo from "./pages/UseMemo.jsx/UseMemo";
 
 // import Propes from "./components/Propes";
 // import Profile from "./components/Profile";
@@ -39,10 +40,10 @@ function App() {
       <Useref/>
       <Stopwatch/>
       <ScrollImg/>
+      <VideoPlayer/>
 
 */}
-
-  <VideoPlayer/>
+<UseMemo/>
     </>
   );
 }
