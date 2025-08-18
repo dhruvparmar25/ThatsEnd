@@ -1,17 +1,16 @@
 import React from "react";
 import "../src/App.css";
-import UseState from "./components/UseState";
-import Updateobj from "./components/Updateobj";
-import Form from "./components/Form";
-import ResEvent from "./components/Responding/ResEvent";
-import UpdatingArray from "./components/UpdatingArray";
-import Managing from "./components/useState/Managing";
-import State from "./pages/State";
-import UseEffect from "./pages/UseEffect";
-import ScrollImg from "./pages/useRef/ScrollImg";
-import VideoPlayer from "./pages/useRef/VideoPlayer";
-import UseMemo from "./pages/UseMemo.jsx/UseMemo";
-
+// import UseState from "./components/UseState";
+// import Updateobj from "./components/Updateobj";
+// import Form from "./components/Form";
+// import ResEvent from "./components/Responding/ResEvent";
+// import UpdatingArray from "./components/UpdatingArray";
+// import Managing from "./components/useState/Managing";
+// import State from "./pages/State";
+// import UseEffect from "./pages/UseEffect";
+// import ScrollImg from "./pages/useRef/ScrollImg";
+// import VideoPlayer from "./pages/useRef/VideoPlayer";
+// import UseMemo from "./pages/UseMemo.jsx/UseMemo";
 // import Propes from "./components/Propes";
 // import Profile from "./components/Profile";
 // import PropButton from "./components/PropButton";
@@ -19,6 +18,7 @@ import UseMemo from "./pages/UseMemo.jsx/UseMemo";
 // import State from "./components/State";
 // import GalleryState from "./components/GalleryState";
 // import ConditionaRendaring from "./components/ConditionaRendaring";
+import CallBack from "./pages/Hooks/useCallBack/CallBack";
 
 function App() {
   return (
@@ -41,9 +41,9 @@ function App() {
       <Stopwatch/>
       <ScrollImg/>
       <VideoPlayer/>
-
+      <UseMemo/>
 */}
-<UseMemo/>
+      <CallBack />
     </>
   );
 }
