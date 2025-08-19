@@ -18,7 +18,12 @@ import "../src/App.css";
 // import State from "./components/State";
 // import GalleryState from "./components/GalleryState";
 // import ConditionaRendaring from "./components/ConditionaRendaring";
-import CallBack from "./pages/Hooks/useCallBack/CallBack";
+// import CallBack from "./pages/Hooks/useCallBack/CallBack";
+import UseReducer from "./components/UseReducer/useReducers";
+import FormReducer from "./components/UseReducer/FormReducer";
+import Score from "./components/UseReducer/Score";
+
+
 
 function App() {
   return (
@@ -42,8 +47,12 @@ function App() {
       <ScrollImg/>
       <VideoPlayer/>
       <UseMemo/>
-*/}
       <CallBack />
+
+*/}
+<UseReducer/>
+<FormReducer/>
+<Score/>
     </>
   );
 }
