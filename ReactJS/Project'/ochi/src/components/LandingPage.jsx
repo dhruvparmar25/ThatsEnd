@@ -11,9 +11,9 @@ function LandingPage() {
             <div className="masker">
               <div className="w-fit flex items-end overflow-hidden">
                 {i === 1 && (
-                  <div className="mr-[1vw]  w-[8vw] rounded-md h-[3.7vw] -top-1vw] relative  bg-green-500"></div>
+                  <div className="mr-[1vw]  w-[8vw] rounded-md h-[5vw] -top-1vw] relative  bg-green-500"></div>
                 )}
-                <h1 className="pt-[1vw] font-bold uppercase text-[5vw] leading-[.75] font-['Founders_Grotesk_X-Condensed']">
+                <h1 className="pt-[1vw] font-semibold uppercase text-[8rem] mb-2 leading-[.75] tracking-tight  ">
                   {item}
                 </h1>
               </div>
