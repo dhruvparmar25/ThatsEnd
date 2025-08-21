@@ -1,78 +1,37 @@
-* {
-  margin: 0;
-  padding: 0px;
-  background-origin: border-box;
-  /* text-align: center; */
-  background-color: grey;
-}
-.test3{
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+@import "tailwindcss";
 
-}
-h2 {
-  color: red;
-
-  font-size: 16px;
-}
-h4 {
-  color: green;
-  padding-top: 10px;
-  padding: 10px;
-}
 button {
-  padding: 5px;
-  width: 50px;
-  background-color: lightblue;
-  border: none;
-  border-radius: 10px;
-  margin-top:1rem;
-}
-button:hover {
-  background-color: lightcoral;
+  border: 1px solid transparent;
+  background-color: black;
   color: white;
-}
-input {
-  background-color: white;
-  border: none;
-  padding: 3px;
+  padding: 1px;
   border-radius: 10px;
-  margin-left: 5px;
+  text-transform: capitalize;
 }
-/* displayRimer */
-.displayRimer,.BMS,.formValidatin,.stopwatch{
-  width: 400px;
-  margin: auto;
-  background-color: black;
-  height: max-content;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 20px;
+.btn-grp > button {
+  width: 75px;
 }
-.display,.bmsField ,.bmsField label,.output,.output p,.formValidatin form ,form div,form div label, form div p,.btn-group,.btn-group div{
-  background-color: black;
-  margin-top: 12px;
-}
-.output p{
-  text-align: start;  
-}
-.title{
-  border-radius: 20px;
-  text-align: center;
-}
-.display{
-  font-size: 64px;
-  color: brown;
-  text-decoration: dotted;  
-}
-form div p{
-  color: red;
-}
-.btn-group{
+.btn-grp {
   display: flex;
-  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.calculator {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.calculator > input{
+    width: 320px;
+    height: 50px;
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+   
 }

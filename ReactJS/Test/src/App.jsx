@@ -7,13 +7,14 @@ import BMI from "./componets/Test[useState,useEffect,useRef]/BMI";
 import Form from "./componets/Test[useState,useEffect,useRef]/Form";
 import Toggel from "./componets/Toggel";
 import StopWatch from "./componets/Test[useState,useEffect,useRef]/StopWatch";
+import Hook from "./componets/Hook-test/Hook";
 
 
 function App() {  
   return (
     <>
      
-     <Test/>
+     {/* <Test/>
      <Test2/>
      
     <div className="test3" >
@@ -34,7 +35,9 @@ function App() {
           <StopWatch />
         </Toggel>
         </div>
-    </div>
+    </div> */}
+<Hook/>
+
     </>
   );
 }
