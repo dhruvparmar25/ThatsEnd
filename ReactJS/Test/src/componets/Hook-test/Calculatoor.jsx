@@ -9,15 +9,16 @@ function Calculatoor() {
         
     }
     const Eqal =()=>{
-        setInput(eval(input).toString())
+        setInput("ANS : " + eval(input).toString())
     }
     const Del=()=>{
         setInput(input.slice(0,-1))
     }
     return (
         <div>
-            <h1 className="text-center text-5xl mt-3  mb-3 uppercase bg-zinc-800 text-white w-fit p-3 m-auto rounded">Calculatoor</h1>
             <section className="rounded bg-blue-200 p-2 w-fit m-auto" >
+                            <h1 className="text-center text-2xl  uppercase bg-zinc-800 text-white w-fit p-1 m-auto rounded">Calculatoor</h1>
+
                 <div className="calculator">
                     <input  value={input} readOnly className="border-1" type="text" />
                 </div> 

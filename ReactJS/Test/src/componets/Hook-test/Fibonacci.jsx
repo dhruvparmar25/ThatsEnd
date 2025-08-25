@@ -14,18 +14,22 @@ function Fibonacci() {
   }, [input]);
   return (
     <div>
-      <h1 className="text-center text-5xl mt-3  mb-3 uppercase bg-zinc-800 text-white w-fit p-3 m-auto rounded">
+  
+      <section className='rounded w-fit p-5 m-auto bg-blue-200'>
+            <h1 className="text-center text-2xl  uppercase bg-zinc-800 text-white w-fit p-1 m-auto rounded mb-3">
         Fibonacci
       </h1>
-      <input
-        className="border-1"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={() => setInput(input)}>Fibonacci</button>
-      <p>
-        Fibonacci of {input} is {result}
-      </p>
+        <input
+          className="border-1  bg-white border-none rounded mr-2 p-2"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button onClick={() => setInput(input)}>Fibonacci</button>
+        <p className="text-red-500 font-semibold mt-3">
+          Fibonacci of {input} is {result}
+        </p>
+      </section>
+
     </div>
   );
 }

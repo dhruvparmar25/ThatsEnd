@@ -6,7 +6,7 @@ function Toggel({ children, label }) {
         setShow(!show)
     }
     return (
-        <div>
+        <div className='flex-row justify-center items-center'>
             <button style={{ width: "fit-content", backgroundColor:  show?"red": "green" ,color:"white"}} onClick={handelToggel}>
                 {show ? `Hide ${label}` : `Show ${label}`}</button>
             {show && <div>{children}</div>}

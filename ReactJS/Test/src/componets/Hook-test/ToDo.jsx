@@ -20,16 +20,18 @@ function ToDo() {
     const [input, setInput] = useState("");
 
     const handleAdd = () => {
-        if(input.trim()!==""){
-        dispatch({ type: "ADD_TASK", payload: input });
+        if (input.trim() !== "") {
+            dispatch({ type: "ADD_TASK", payload: input });
 
         }
         setInput("");
     };
     return (
         <>
-            <h1 className='text-center text-5xl mt-3  mb-3 uppercase bg-zinc-800 text-white w-fit p-3 m-auto rounded'  >Hook Test</h1>
-            <section className='rounded w-fit p-5 m-auto bg-orange-300'>
+
+            <section className='rounded w-fit p-5 m-auto bg-blue-200'>
+                <h1 className='            <h1 className="text-center text-2xl  uppercase bg-zinc-800 text-white w-fit p-1 m-auto rounded">Calculatoor</h1>
+'  >Hook Test</h1>
                 <h1 className='text-5xl text-start mb-5'>To-Do List</h1>
                 <input className='rounded p-2 bg-white' value={input} onChange={(e) => setInput(e.target.value)} />
                 <button className='border-1 ml-3 p-1 rounded' onClick={handleAdd} >Add task</button>
