@@ -22,6 +22,7 @@ import "../src/App.css";
 import UseReducer from "./components/UseReducer/useReducers";
 import FormReducer from "./components/UseReducer/FormReducer";
 import Score from "./components/UseReducer/Score";
+import Parent from "./pages/Hooks/UseContex/Parent";
 
 
 
@@ -48,11 +49,13 @@ function App() {
       <VideoPlayer/>
       <UseMemo/>
       <CallBack />
+      <UseReducer/>
+      <FormReducer/>
+      <Score/>
 
 */}
-<UseReducer/>
-<FormReducer/>
-<Score/>
+<Parent/>
+
     </>
   );
 }
