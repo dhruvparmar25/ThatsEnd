@@ -23,6 +23,11 @@ import UseReducer from "./components/UseReducer/useReducers";
 import FormReducer from "./components/UseReducer/FormReducer";
 import Score from "./components/UseReducer/Score";
 import Parent from "./pages/Hooks/UseContex/Parent";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 
 
@@ -53,9 +58,16 @@ function App() {
       <FormReducer/>
       <Score/>
 
-*/}
-<Parent/>
 
+
+*/}
+{/* <Navbar/>
+  <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route  path="/about" element={<About/>}/>
+    <Route path="/contact" element={<Contact/>} />
+  </Routes>  */}
+  <Parent/>
     </>
   );
 }

@@ -10,7 +10,7 @@ function Parent() {
 
         <UserContextVal.Provider value={[text, setText]}>
             <h1>Parent {text}</h1>
-            <Child text={text} />
+            <Child  />
         </UserContextVal.Provider>
 
 
