@@ -1,74 +1,15 @@
 import React from "react";
-import "../src/App.css";
-// import UseState from "./components/UseState";
-// import Updateobj from "./components/Updateobj";
-// import Form from "./components/Form";
-// import ResEvent from "./components/Responding/ResEvent";
-// import UpdatingArray from "./components/UpdatingArray";
-// import Managing from "./components/useState/Managing";
-// import State from "./pages/State";
-// import UseEffect from "./pages/UseEffect";
-// import ScrollImg from "./pages/useRef/ScrollImg";
-// import VideoPlayer from "./pages/useRef/VideoPlayer";
-// import UseMemo from "./pages/UseMemo.jsx/UseMemo";
-// import Propes from "./components/Propes";
-// import Profile from "./components/Profile";
-// import PropButton from "./components/PropButton";
-// import CartParent from "./components/CartParent";
-// import State from "./components/State";
-// import GalleryState from "./components/GalleryState";
-// import ConditionaRendaring from "./components/ConditionaRendaring";
-// import CallBack from "./pages/Hooks/useCallBack/CallBack";
-import UseReducer from "./components/UseReducer/useReducers";
-import FormReducer from "./components/UseReducer/FormReducer";
-import Score from "./components/UseReducer/Score";
-import Parent from "./pages/Hooks/UseContex/Parent";
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
+import './assets/posts.css'
+
 
 
 
 function App() {
   return (
-    <>
-      {/* <Profile />
-      <PropButton />
-      <CartParent />
-      <State />
-      <GalleryState />
-      <UseState/>
-      <Updateobj/>
-      <ConditionaRendaring/> 
-      <Form />
-      <ResEvent />
-      <UpdatingArray /> 
-      <Managing/>
-      <State/>
-      <UseEffect/>
-      <Useref/>
-      <Stopwatch/>
-      <ScrollImg/>
-      <VideoPlayer/>
-      <UseMemo/>
-      <CallBack />
-      <UseReducer/>
-      <FormReducer/>
-      <Score/>
-
-
-
-*/}
-{/* <Navbar/>
-  <Routes>
-    <Route path="/" element={<Home/>} />
-    <Route  path="/about" element={<About/>}/>
-    <Route path="/contact" element={<Contact/>} />
-  </Routes>  */}
-  <Parent/>
-    </>
+      <section className="main-section">
+        <Posts />
+      </section>
   );
 }
 
